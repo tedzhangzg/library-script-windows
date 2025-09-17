@@ -143,6 +143,10 @@ Function Is-Win11() {
 # [System.Environment]::OSVersion.Version.Major
 # [System.Environment]::OSVersion.Version.Minor
 # [System.Environment]::OSVersion.Version.Build
+# 
+# Check if Server or Desktop
+# (Get-CimInstance -ClassName "Win32_OperatingSystem").ProductType
+# (Get-WmiObject -Class "Win32_OperatingSystem").ProductType
 
 
 
